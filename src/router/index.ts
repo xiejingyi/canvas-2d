@@ -34,6 +34,14 @@ export const routes: RouteRecordRaw[] = [
       title: 'Canvas 2D 变换示例'
     } 
   },
+  {
+    path: '/animate',
+    name: 'Animate',
+    component: () => import('@/canvas2d-components/animate/index.vue'),
+    meta: {
+      title: 'Canvas 2D 动画示例'
+    }
+  }
 ]
 
 const router = createRouter({
